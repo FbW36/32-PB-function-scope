@@ -24,17 +24,19 @@ Create a function named . Declare a variable outside of the function and store y
 
 let fruits = ["mango", "coconut", "pineapple", "cucumber"];
 
-// option 1
+// // option 1
 
-function printFavoriteFruit() {
-  console.log(`My favorite fruit is ${fruits[0]}.`);
-}
+// function printFavoriteFruit() {
+//   let fruits = ["bananas", "apples"];
+//   console.log(`My favorite fruit is ${fruits[i]}.`);
+// }
 
-printFavoriteFruit();
+// printFavoriteFruit();
 
 // option 2
 
 function printFavoriteFruit2() {
+  let fruits = ["bananas", "apples"];
   for (i = 0; i < fruits.length; i++) {
     console.log(`my favorite fruit is: ${fruits[i]}`);
   }
