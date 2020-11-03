@@ -5,15 +5,17 @@
 //After that, the function should print y exponential values starting from x.
 //For example if we have function(3, 5) The function should print 3 9 27 81 243. Prints 5 exponential values of 3.
 //function(2, 8) The function prints 2 4 8 16 32 64 128 256. Prints 8 exponential values of 2.
-const power = (base, exponent) =>{
-    
-         let result = 1
-         for(let i=0; i < exponent; i++){
-            result = result * base
-         }
-         return result
+const empty = [];
+function validateNumbers(x, y) {
+  if (isNaN(x) != true || isNaN(x) != true) {
+    for (i = 1; i <= y; i++) {
+      empty.push(x ** i);
     }
-    console.log("power ==> ", power(2,4))
+  }
+  return empty;
+}
+//console.log(validateNumbers(3, 5));
+console.log(validateNumbers(2, 8));
 //     2. Fruits
 
 //     Create a function named printFavoriteFruit. Declare a variable outside of the function and store your favorite fruit as a value. Reassign the variable within the function and print "My favorite fruit is: x".
@@ -36,6 +38,6 @@ const exponent = (base, exponent) =>{
          }
          return result
     }
-    console.log("power ==> ", power(2,4))
+    console.log("power ==> ", exponent(2,4))
     //console.log(result)
 //It is not possible to acces the result variable because it's only a local variable. 
